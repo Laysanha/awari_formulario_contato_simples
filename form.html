@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awari - HTML</title>
+</head>
+<body>
+    <form 
+        style="display: flex; justify-items: center; flex-direction: column; gap: 10px; align-items: center;"    
+        >
+        <h2 style="color: blue; font-family:sans-serif;">Awari</h2>
+        <input 
+            placeholder="Nome" 
+            id="inputNome" 
+            type="text"
+            style="width: 350px; height: 36px; padding: 0px 8px 0px 8px;"
+        >
+        <input
+            placeholder="Email" 
+            id="inputEmail" 
+            type="text"
+            style="width: 350px; height: 36px; padding: 0px 8px 0px 8px;"
+        >
+        <input 
+            placeholder="Mensagem" 
+            id="inputMensagem" 
+            type="text"
+            style="width: 350px; height: 36px; padding: 0px 8px 0px 8px;"
+        >
+        <button
+            onclick="clicar()" 
+            style="width: 100px; height: 36px;background-color: blue; border-radius: 8px; border: transparent; color: white; cursor: pointer;">
+            Enviar
+        </button>
+    </form>
+</body>
+
+<script>
+    var userName = document.getElementById("inputNome");
+    var userEmail = document.getElementById("inputEmail");
+    var userMesage = document.getElementById("inputMensagem");
+    function clicar(){
+        alert(
+            "Nome: " + userName.value +
+            " \nE-mail: " + userEmail.value + 
+            " \nMensagem :" + userMesage.value
+        );
+    }
+</script>
+</html>
